@@ -1,9 +1,8 @@
-﻿using System;
+﻿using MathParser.Tokens;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace MathParser
+namespace MathParser.Steps
 {
     public class Cleaner
     {

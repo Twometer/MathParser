@@ -1,9 +1,10 @@
-﻿using System;
+﻿using MathParser.Tokens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MathParser
+namespace MathParser.Steps
 {
     public class Expander
     {
@@ -11,7 +12,7 @@ namespace MathParser
         public IEnumerable<Token> Expand(IEnumerable<Token> input)
         {
             var inputArray = input.ToArray();
-            for(var i = 0; i < inputArray.Length; i++)
+            for (var i = 0; i < inputArray.Length; i++)
             {
                 var current = inputArray[i];
                 var next = i + 1 < inputArray.Length ? inputArray[i + 1] : Token.EOF;

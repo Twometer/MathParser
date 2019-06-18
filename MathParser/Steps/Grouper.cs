@@ -1,8 +1,7 @@
-﻿using System;
+﻿using MathParser.Tokens;
 using System.Collections.Generic;
-using System.Text;
 
-namespace MathParser
+namespace MathParser.Steps
 {
     public class Grouper
     {
@@ -10,9 +9,9 @@ namespace MathParser
         public IEnumerable<IToken> Group(IEnumerable<Token> tokens)
         {
             var tokenGroup = new TokenGroup();
-            foreach(var token in tokens)
+            foreach (var token in tokens)
             {
-                if(token.Type == TokenType.Plus || token.Type == TokenType.Minus)
+                if (token.Type == TokenType.Plus || token.Type == TokenType.Minus)
                 {
                     yield return tokenGroup;
                     tokenGroup = new TokenGroup();

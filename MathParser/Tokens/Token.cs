@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MathParser
+namespace MathParser.Tokens
 {
     public class Token : IToken
     {

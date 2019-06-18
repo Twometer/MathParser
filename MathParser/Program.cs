@@ -1,10 +1,13 @@
-﻿using System;
+﻿using MathParser.Steps;
+using MathParser.Tokens;
+using System;
 using System.Collections.Generic;
 
 namespace MathParser
 {
     class Program
     {
+        // TODO: Clean up and build API
         static void Main(string[] args)
         {
             var input = "35x-01x*4+91*0+3340/2-x";
