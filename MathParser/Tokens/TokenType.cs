@@ -12,7 +12,6 @@ namespace MathParser.Tokens
         Minus,
         Multiply,
         Divide,
-        Equals,
         ParenOpen,
         ParenClose,
         EOF

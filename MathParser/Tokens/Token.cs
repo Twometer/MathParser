@@ -10,7 +10,7 @@ namespace MathParser.Tokens
         public static readonly Token Plus = new Token("+", TokenType.Plus);
         public static readonly Token Divide = new Token("/", TokenType.Divide);
         public static readonly Token Multiply = new Token("*", TokenType.Multiply);
-        public static readonly Token Equals = new Token("=", TokenType.Equals);
+        
         public static readonly Token EOF = new Token(null, TokenType.EOF);
 
         public double NumericValue => double.Parse(Content);

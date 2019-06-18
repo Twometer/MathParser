@@ -42,9 +42,6 @@ namespace MathParser.Tokens
                         case ')':
                             tokenType = TokenType.ParenClose;
                             break;
-                        case '=':
-                            tokenType = TokenType.Equals;
-                            break;
                         default:
                             tokenType = TokenType.Variable;
                             break;
